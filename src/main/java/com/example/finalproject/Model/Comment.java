@@ -24,7 +24,7 @@ public class Comment {
     @NotNull(message = "Message Should not be Empty")
     private String message;
     @NotNull(message = "Rating Should not be Empty")
-    @Min(1)
-    @Max(5)
+    @Min(value = 1,message = "Rating Should not be less than 1")
+    @Max(value = 5,message = "Rating Should not be more than 5")
     private Integer rating;
 }

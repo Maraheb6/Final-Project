@@ -27,7 +27,7 @@ public class Address {
     private  String neighborhood;
     @NotNull(message = "postCode Should not be Empty")
     @Size(min = 4,max = 5,message = "Postcode Should not be less than 10")
-    private Integer postCode;
+    private String postCode;
     @NotNull(message = "Country Should not be Empty")
     private  String country;
 
